@@ -1,8 +1,4 @@
-Para a sua documentação e apresentação acadêmica, a descrição técnica deve detalhar a **arquitetura**, o **fluxo de dados** e os **componentes** que fazem a Athena funcionar.
 
-Aqui está a descrição técnica detalhada do MVP:
-
----
 
 ### 1. Arquitetura do Sistema: RAG (Retrieval-Augmented Generation)
 
@@ -50,4 +46,3 @@ Como as APIs de LLM são apátridas (*stateless*), o MVP utiliza o `st.session_s
 
 ---
 
-Esta descrição técnica demonstra que o seu projeto não é apenas "enviar uma mensagem para uma IA", mas sim um sistema de engenharia de dados que organiza e recupera conhecimento específico para resolver um problema social.
