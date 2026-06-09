@@ -289,7 +289,7 @@ with st.sidebar:
 st.markdown("<h3>Orientação Jurídica Inteligente</h3>", unsafe_allow_html=True)
 st.markdown(
     "Utilize a Athena para tirar dúvidas sobre a Lei Maria da Penha, direitos da gestante, "
-    "direitos trabalhistas da mulher, empreendedorismo e mais. Suas perguntas serão cruzadas "
+    "direitos trabalhistas da mulher, empreendedorismo, contatos de Delegacias Especializadas do RN e mais. Suas perguntas serão cruzadas "
     "com a nossa biblioteca de leis oficiais para trazer respostas fundamentadas."
 )
 
