@@ -2,7 +2,7 @@
 
 O **Ecossistema Athena** é uma aplicação web assistencial baseada na arquitetura **RAG (Retrieval-Augmented Generation)**. O sistema atua como uma especialista jurídica e rede de apoio virtual, democratizando o acesso a direitos fundamentais através da tradução de legislações complexas em diálogos interativos, acessíveis e psicologicamente seguros.
 
-Acesse o MVP aqui: `[link-do-seu-app.streamlit.app]`
+Acesse o MVP aqui (https://sabedoriaathena.streamlit.app/)
 
 ---
 
