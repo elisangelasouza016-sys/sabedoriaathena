@@ -22,10 +22,5 @@ Acesse o MVP aqui (https://sabedoriaathena.streamlit.app/)
 5. **Inferência:** LLM parametrizado com **Temperatura fixa em 0.5** para mitigação absoluta de alucinações e garantia de rigor factual.
 
 ---
+O projeto Athena cumpre seu papel acadêmico ao aplicar conceitos avançados de IA Generativa para resolver um problema real, demonstrando que a tecnologia pode ser uma aliada estratégica na democratização do acesso aos direitos e na proteção da mulher.
 
-## 🚀 Como Executar Localmente
-
-1. **Clonar o Repositório:**
-   ```bash
-   git clone [https://github.com/](https://github.com/)[seu-usuario]/[seu-repositorio].git
-   cd [seu-repositorio]
