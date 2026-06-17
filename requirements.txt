@@ -1,10 +1,9 @@
-streamlit
-requests
-python-dotenv
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
 langchain
 langchain-community
-langchain-text-splitters
-sentence-transformers
+langchain-huggingface
 faiss-cpu
-pypdf
 streamlit-mic-recorder
+requests
