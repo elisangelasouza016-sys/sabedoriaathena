@@ -3,7 +3,6 @@ torch
 torchvision
 langchain
 langchain-community
-langchain-huggingface
 faiss-cpu
-streamlit-mic-recorder
 requests
+streamlit
