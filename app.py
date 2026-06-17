@@ -109,19 +109,14 @@ with st.spinner("Construindo e indexando a base de conhecimento jurídica..."):
 # ==========================================
 # 5. BARRA LATERAL (INFORMAÇÃO E SOCORRO)
 # ==========================================
-with st.sidebar:
-    st.title("🏛️ Ecossistema Athena")
-    st.subheader("IA para Orientação e Proteção da Mulher")
-    st.markdown("---")
-    
-    # Card de Emergência de Alta Visibilidade (UX de Impacto Social)
-    st.markdown("""
-        <div class="emergency-card">
-            🚨 CANAIS DE EMERGÊNCIA<br>
-            <span style="font-size: 20px;">LIGUE 180 (Mulher)</span><br>
-            <span style="font-size: 20px;">LIGUE 190 (Polícia)</span>
-        </div>
-    """, unsafe_allow_index=True)
+# No bloco 5 (Barra lateral), certifique-se de que o final está assim:
+st.markdown("""
+    <div class="emergency-card">
+        🚨 CANAIS DE EMERGÊNCIA<br>
+        <span style="font-size: 20px;">LIGUE 180 (Mulher)</span><br>
+        <span style="font-size: 20px;">LIGUE 190 (Polícia)</span>
+    </div>
+""", unsafe_allow_html=True) # <- Garanta que aqui também seja html[cite: 2]
     
     st.markdown("---")
     st.markdown("### 📚 Documentos Ativos no RAG:")
