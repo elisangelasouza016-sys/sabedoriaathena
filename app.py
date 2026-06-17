@@ -70,13 +70,21 @@ def inicializar_base_conhecimento():
         except Exception as e:
             print(f"Erro ao ler arquivo {caminho_pdf}: {e}")
 
+    if not todos_os_documentos:
+        return None
+
     # Fragmentação Semântica (Tamanho ideal para artigos de lei)
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=700, chunk_overlap=100)
     fragmentos = text_splitter.split_documents(todos_os_documentos)
 
-    # Inicialização dos Embeddings via Módulo Clássico da Community
+    # 🛑 DEFESA DE SEGURANÇA: Aborta se a lista de fragmentos for vazia (Evita erro do FAISS)
+    if not fragmentos or len(fragmentos) == 0:
+        return None
+
+    # Inicialização dos Embeddings (Exige o pacote sentence-transformers no requirements)
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     
+    # Criação segura do Banco Vetorial
     db_vetorial = FAISS.from_documents(fragmentos, embeddings)
     return db_vetorial
 
@@ -110,7 +118,7 @@ with st.sidebar:
             if f.lower().endswith('.pdf'):
                 st.caption(f"📖 `{f}`")
     else:
-        st.warning("⚠️ Nenhum arquivo PDF encontrado na pasta `conhecimento/`.")
+        st.warning("⚠️ Nenhum arquivo PDF válido encontrado na pasta `conhecimento/`.")
 
 # ==========================================
 # 5. ENGENHARIA DE PROMPT (ATHENA PERSONA)
