@@ -26,8 +26,7 @@ st.markdown("""
     }
     .chat-athena { color: #5b21b6; font-weight: 500; }
     </style>
-""", unsafe_allow_index=True)
-
+""", unsafe_allow_html=True) # <- ALTERADO PARA HTML
 # Inicialização do Histórico do Chat no State
 if "messages" not in st.session_state:
     st.session_state.messages = []
